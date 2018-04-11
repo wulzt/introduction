@@ -1,3 +1,39 @@
+@keyframes mybox{
+    0%{background-color: lemonchiffon;left:-20px; top:0px;}
+    25%{background-color: lightpink;left:1100px; top:0px;}
+    50%{background-color: lightgray;left:1100px; top:790px;}
+    75%{background-color: lightblue; left:-20px; top:790px;}
+    100%{background-color: lemonchiffon;left:-20px; top:0px;}    
+}
+
+@keyframes mytwobox{
+    0%{background-color: lemonchiffon;left:1100px; top:-23px;}
+    25%{background-color: lightpink;left:-26px; top:-23px;}
+    50%{background-color: lightgray;left:-26px; top:403px;}
+    75%{background-color: lightblue;left:1100px; top:403px; }
+    100%{background-color: lemonchiffon;left:1100px; top:-23px;}   
+}
+
+#littlebox{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    animation-name: mybox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#littlelittlebox{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    animation-name: mytwobox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
 body{
     background-color: rgb(239, 244, 245);
 }
@@ -21,6 +57,7 @@ body{
     height: 400px;
     border: 3px double darkcyan;
     margin: 25px 0;
+    position: relative;
 }
 
 #footer{
@@ -88,6 +125,7 @@ div#inner{
     position: relative;
     height: 400px;
     background-color:rgb(239, 244, 245);
+
 }
 
 ul>li>div{
